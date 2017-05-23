@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var x=parseInt(prompt("请输入整数X的值"));
+    var y=parseInt(prompt("请输入整数y的值"));
+    var z=parseInt(prompt("请输入整数z的值"));
+//    var max=x>y?x>z?x:z:y>z?y:z;
+//    var min= x<y?x<z?x:z:y<z?y:z;
+//    var mid=x+y+z-min-max;
+//    document.write(min,mid,max);
+
+    //创建函数
+    function sort(x,y,z){
+        x>y&&(x^=y,y^=x,x^=y);
+        y>z&&(z=[y,y=z][0]);
+        x>y&&(x^=y,y^=x,x^=y);
+        console.log(x,y,z)
+    }
+     sort(x,y,z);
+</script>
+</body>
+</html>
