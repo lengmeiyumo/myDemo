@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width:200px;
+            height:100px;
+            background:linear-gradient(90deg,#ffc700 0%,#e91e1e 33%,#6f27b0 66%,#00ff88 100%);
+            background-position: 100% 0;
+            animation:bgSize 5s infinite ease-in-out alternate;
+        }
+        @keyframes bgSize {
+              0%{
+                  background-size:300% 100%;
+              }
+            100%{
+                background-size:100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div></div>
+</body>
+</html>

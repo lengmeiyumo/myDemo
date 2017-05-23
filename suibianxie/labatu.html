@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #a{
+            width:300px;
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            border:1px solid #E4393C;
+            margin:100px auto;
+            position:relative;
+            overflow: hidden;
+        }
+        #a ul{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        #a li{
+            width:300px;
+            height:40px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <ul>
+            <li style="background-color:red;" >⊙﹏⊙自古英雄出少年</li>
+            <li style="background-color:green;">⊙﹏⊙自古英雄出少年</li>
+            <li style="background-color:mediumvioletred;">⊙﹏⊙自古英雄出少年</li>
+            <li style="background-color:pink;">⊙﹏⊙自古英雄出少年</li>
+            <li style="background-color:blue;">⊙﹏⊙自古英雄出少年</li>
+            <!--<li style="background-color:red;" >⊙﹏⊙自古英雄出少年</li>-->
+        </ul>
+    </div>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        var c= 0;
+        setInterval(function(){
+            c++;
+           if(c>4){
+               c=0;
+    //             $("#a ul").css({'top':0});
+           }
+            $("#a ul").animate({
+                'top':-40*c+'px'
+            },500)
+        },1500)
+    </script>
+</body>
+</html>
