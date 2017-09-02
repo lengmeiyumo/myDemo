@@ -56,6 +56,17 @@ import axios from 'axios';
                          };
                      }
         }, 
+       // 1. :style="{'color':item.sort<=10?'#f2972e':''}" :style设置前10名的文字颜色。
+
+　　//2. !isNaN(parseInt(_this.name)) 判断输入的是数字还是文字，如果有数字就会按照数字搜索。
+
+ 　  //3.过滤器two
+                filters: {//保留两位小数点
+                    two : function(value){
+                        if (!value) { return ''};
+                        return value.toFixed(2);
+                    }
+                }
         filters: {//保留两位小数点
                     two : function(value){
                         if (!value) { return ''};
