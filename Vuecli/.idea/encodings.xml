@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/vuecliTest/src/App.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vuecliTest/src/components/Hello.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vuecliTest/src/components/Pos.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vuecliTest/src/components/common/leftNav.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vuecliTest/src/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vuecliTest/src/router/index.js" charset="UTF-8" />
+  </component>
+</project>
